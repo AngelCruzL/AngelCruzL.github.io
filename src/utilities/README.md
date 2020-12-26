@@ -1,1 +1,3 @@
 # Utilidades
+
+En esta sección de utilidades se incluyen varias utilidades para el desarrollo web como GIT para el manejo de versiones, algunas extensiones utiles para VS Code y algunos consejos acerca del editor, software recomendado entre otras cosas...

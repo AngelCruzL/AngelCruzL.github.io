@@ -1,15 +1,13 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: 
-actionText: Quick Start →
-actionLink: /guide/
+heroImage: https://studio.uxpincdn.com/studio/wp-content/uploads/2020/02/BlogpostHeader_CodingLanguages_1200x600-1024x512.png
+tagline:
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by Ángel Cruz with ❤️
+  - title: Utilidades
+    details: GIT, extensiones para VS Code, software, entre otras cosas...
+  - title: Frontend
+    details: HTML, CSS3, SASS, Javascript, Angular y React
+  - title: Backend
+    details: SQL, .Net, Node, Deno
+    footer: Made by Ángel Cruz with ❤️
 ---

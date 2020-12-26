@@ -1,3 +1,3 @@
 # Frontend
 
-Esta sección va enfocada en aprender las bases de la parte de la web que interactua con el usuario.
+En esta sección de frontend se incluyen varias notas acerca de diversas tecnologias que se utilizan para el desarrollo frontend como HTML, CSS3, SASS, Javascript, Angular y React
