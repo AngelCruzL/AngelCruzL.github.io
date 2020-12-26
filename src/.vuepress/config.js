@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: "Vuepress Docs Boilerplate",
+  title: "Ángel Cruz Notes",
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -54,13 +54,9 @@ module.exports = {
       },
     ],
     sidebar: {
-      "/guide/": [
-        {
-          title: "Guide",
-          collapsable: false,
-          children: ["", "using-vue"],
-        },
-      ],
+      "/utilities/": [""],
+      "/frontend/": ["", "html", "css", "js"],
+      "/backend/": [""],
     },
   },
 
