@@ -126,7 +126,7 @@ En SASS se realiza lo siguiente:
 
 ## Flexbox
 
-Para poder aplicar la propiedad de flexbox es necesario que el padre del elemento al cual le quieres aplicar esta propiedad contenga la propiedad de **_display : flex ;_** el cual tomará toda la fila del contenedor, mientras que si el padre utiliza la propiedad **_display : inline-flex ;_** tomará solo el ancho del espacio disponible.
+Para poder aplicar la propiedad de flexbox es necesario que el padre del elemento al cual le quieres aplicar esta propiedad contenga la propiedad de `display: flex;` el cual tomará toda la fila del contenedor, mientras que si el padre utiliza la propiedad `display: inline-flex;` tomará solo el ancho del espacio disponible.
 
 La propiedad de flex-direction tiene cuatro posibles valores; row, row-reverse, column, column-reverse. El valor por defecto que tiene esta propiedad es row
 

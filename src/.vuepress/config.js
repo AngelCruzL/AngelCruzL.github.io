@@ -34,7 +34,7 @@ module.exports = {
       { text: "VuePress", link: "https://v1.vuepress.vuejs.org" },
     ],
     sidebar: {
-      "/utilities/": [""],
+      "/utilities/": ["", "git"],
       "/frontend/": ["", "html", "css", "js"],
       "/backend/": [""],
     },
