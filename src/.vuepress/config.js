@@ -35,7 +35,7 @@ module.exports = {
     ],
     sidebar: {
       "/utilities/": ["", "git"],
-      "/frontend/": ["", "html", "css", "js"],
+      "/frontend/": ["", "html", "css", "js", "nextjs"],
       "/backend/": [""],
     },
   },
