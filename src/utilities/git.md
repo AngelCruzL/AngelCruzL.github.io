@@ -215,3 +215,135 @@ git branch -d rama-villanos
 git checkout -b rama-villano
   Crea y nos desplaza a “rama-villano”
 ```
+
+## Tags
+
+Un tag hace referencia a un commit y a todo el estado del proyecto en ese momento en especifico
+
+```bash
+git tag superRelase
+  Crea una etiqueta llamada “superRelase” en el lugar donde apunta el header
+
+git tag
+  Muestra todas las etiquetas creadas
+
+git tag -d superRelase
+  Elimina la etiqueta “superRelase”
+
+git tag -a v1.0.0 -m "Versión 1.0.0"
+  Crea un tag con la nota “v1.0.0”, mensaje "Versión 1.0.0" a donde apunta el head
+
+git tag -a v0.1.0 345d7de -m "Version alpha del código"
+  Crea un tag con la nota “v0.1.0”, mensaje "Versión alpha del código"
+  a donde apunta 345d7de
+
+git show v0.1.0
+  Muestra los detalles del tag v0.1.0
+```
+
+::: details Versionado
+Las etiquetas se utilizan para el versionado del proyecto, el incremento
+semantico de las versiones se divide en cuatro lanzamientos principales
+
+First release | 1.0.0 | Start with 1.0.0
+
+Patch release | 1.0.1 | Increment the third digit
+
+Minor release | 1.1.0 | Increment the middle digit and reset last digit to zero
+
+Major release | 2.0.0 | Increment the first digit and reset middle and last digits to zero
+:::
+
+## Stash
+
+El stash nos sirve para tomar algunos archivos y colocarlos en una línea temporal
+
+```bash
+git stash / git stash save
+  Crea un stash
+
+git stash apply
+  Restaura el ultimo registro en el stash
+
+git stash list
+  Muestra el registro del stash
+
+git stash drop
+  Elimina el ultimo stash (posición 0)
+
+git stash pop
+  Restaura la ultima entrada del stash y la borra
+
+git stash save --keep-index
+  keep index: Guarda todos los archivos menos los que están en el stage
+
+git stash save --include-untracked
+  Include-untracked: Incluye todos los archivos, junto a los que git
+  no les da seguimiento
+
+git stash list –stat
+  Mas información de cada entrada del stash
+
+git show stash
+  Muestra de manera detallada cada stash
+
+git stash save “…”
+  Agrega el mensaje … a la entrada actual del stash
+
+git stash clear
+  Borra de manera irrecuperable todas las entradas del stash
+```
+
+## Rebase
+
+```bash
+git rebase master
+  Crea un área temporal para reorganizar la información
+
+git rebase -i HEAD~4
+  Crea un rebase interactivo con el cual puedes realizar múltiples tareas,
+  entre ellas squash (s), la cuál une los dos últimos commits
+
+Reword sirve para modificar el mensaje
+
+git checkout misiones.md
+  Elimina los cambios del archivo misiones.md desde el último commit
+
+git reset HEAD^
+  Deshace el último commit sin revertir los cambios que se guardaron de este,
+  antes debimos acceder desde el edit del commit
+
+Para terminar el rebase se ejecuta el siguiente comando
+git rebase --continue
+```
+
+## GitHub
+
+:::details Básicos
+
+```bash
+git push
+  Sube los cambios del repositorio al servidor
+
+git pull
+  Descarga los cambios del servidor
+
+git remote -v
+  Muestra de donde se descargan y cargan los archivos del repositorio
+
+git push --tags
+  Subir los tags a github
+
+git clone https…
+  Nos permite clonar el repositorio de la web https…
+
+git fetch
+  Sirve para mostrar si hay cambios en el repositorio en línea respecto al local
+
+
+Se recomienda hacer un git fetch en vez de un pull ya que el pull es
+destructivo al hacer el merge de manera automática,
+de aquí se realiza el pull y luego un push
+```
+
+:::
